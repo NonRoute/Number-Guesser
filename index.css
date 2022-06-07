@@ -1,0 +1,83 @@
+*,
+html,
+body {
+    font-family: 'Chewy', Courier, monospace;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    color: #734A32;
+    background-color: #F2B05E;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header>h1 {
+    margin: 0;
+}
+
+body {
+    background-color: #BF6836;
+}
+
+main {
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+}
+
+main>h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.setting-box {
+    font-size: 28px;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.setting-box>input {
+    margin: 0 30px 0 5px;
+    font-size: 28px;
+}
+
+a {
+    text-decoration: none;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#play-btn, #check-btn {
+    padding: 5px 20px;
+    font-size: 28px;
+    color: #734A32;
+    background-color: #F2B05E;
+    border: none;
+    box-shadow: 0 9px #734A32;
+    border-radius: 3px;
+}
+
+#play-btn:hover, #check-btn:hover {
+    background-color: #f2c58d;
+}
+
+#play-btn:active, #check-btn:active {
+    background-color: #f2c58d;
+    box-shadow: 0 5px #734A32;
+    transform: translateY(4px);
+}
+
+.center {
+    text-align: center;
+}
+
+.input-number {
+    margin: 30px auto;
+    font-size: 40px;
+}
+
