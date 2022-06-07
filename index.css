@@ -48,11 +48,10 @@ main>h2 {
 a {
     text-decoration: none;
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
 }
 
-#play-btn, #check-btn {
+#play-btn,
+#check-btn {
     padding: 5px 20px;
     font-size: 28px;
     color: #734A32;
@@ -62,11 +61,13 @@ a {
     border-radius: 3px;
 }
 
-#play-btn:hover, #check-btn:hover {
+#play-btn:hover,
+#check-btn:hover {
     background-color: #f2c58d;
 }
 
-#play-btn:active, #check-btn:active {
+#play-btn:active,
+#check-btn:active {
     background-color: #f2c58d;
     box-shadow: 0 5px #734A32;
     transform: translateY(4px);
@@ -81,3 +82,9 @@ a {
     font-size: 40px;
 }
 
+#error {
+    font-size: 28px;
+    margin-top: 30px;
+    color: #f57e76;
+    text-align: center;
+}
