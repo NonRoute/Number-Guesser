@@ -88,3 +88,10 @@ a {
     color: #f57e76;
     text-align: center;
 }
+
+#hint {
+    font-size: 28px;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
