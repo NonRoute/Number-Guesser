@@ -14,16 +14,15 @@ document.getElementById("check-btn").addEventListener("click", function () {
         addHistory(guessNumber,"Correct!")
         increseNumberOfGuesses()
         showRestartBtn()
+        document.getElementById("check-btn").disabled = true
     } else if (guessNumber > randomNumber) {
         setHint("Too high!")
         addHistory(guessNumber,"Too high!")
         increseNumberOfGuesses()
-        hideRestartBtn()
     } else {
         setHint("Too Low!")
         addHistory(guessNumber,"Too Low!")
         increseNumberOfGuesses()
-        hideRestartBtn()
     }
 })
 
@@ -53,8 +52,4 @@ function showRestartBtn() {
     document.getElementById("restart-btn").addEventListener("click", function() {
         window.location.href = "index.html"
     })
-}
-
-function hideRestartBtn() {
-    document.getElementById("restart").innerHTML = ""
 }
