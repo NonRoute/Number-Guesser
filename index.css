@@ -51,7 +51,8 @@ a {
 }
 
 #play-btn,
-#check-btn {
+#check-btn,
+#restart-btn {
     padding: 5px 20px;
     font-size: 28px;
     color: #734A32;
@@ -62,12 +63,14 @@ a {
 }
 
 #play-btn:hover,
-#check-btn:hover {
+#check-btn:hover,
+#restart-btn:hover {
     background-color: #f2c58d;
 }
 
 #play-btn:active,
-#check-btn:active {
+#check-btn:active,
+#restart-btn:active {
     background-color: #f2c58d;
     box-shadow: 0 5px #734A32;
     transform: translateY(4px);
@@ -94,4 +97,10 @@ a {
     margin-top: 30px;
     color: white;
     text-align: center;
+}
+
+#restart {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
