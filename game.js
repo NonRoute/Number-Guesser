@@ -31,9 +31,9 @@ function increseNumberOfGuesses() {
     document.getElementById("num-guesses").textContent = no_guesses;
 }
 function addHistory(number, hint) {
-    document.getElementById("history").innerHTML += `
+    document.getElementById("history").innerHTML = `
         <p>${number} ${hint}</p>
-    `
+    `+ document.getElementById("history").innerHTML
 }
 function check() {
     let guessNumber = parseInt(document.getElementsByClassName("input-number")[0].value)
