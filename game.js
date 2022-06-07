@@ -1,6 +1,7 @@
 let min_num = parseInt(JSON.parse(localStorage.getItem("min_num")))
 let max_num = parseInt(JSON.parse(localStorage.getItem("max_num")))
 let randomNumber = JSON.parse(localStorage.getItem("randomNumber"))
+let no_guesses = 0
 
 document.getElementById("possible-number").textContent = `Possible numbers are between ${min_num} to ${max_num}`
 
@@ -10,17 +11,31 @@ document.getElementById("check-btn").addEventListener("click", function () {
         setHint("Error! please check your input")
     } else if (guessNumber === randomNumber) {
         setHint("Correct!")
+        addHistory(guessNumber,"Correct!")
+        increseNumberOfGuesses()
         showRestartBtn()
     } else if (guessNumber > randomNumber) {
         setHint("Too high!")
+        addHistory(guessNumber,"Too high!")
+        increseNumberOfGuesses()
         hideRestartBtn()
     } else {
         setHint("Too Low!")
+        addHistory(guessNumber,"Too Low!")
+        increseNumberOfGuesses()
         hideRestartBtn()
     }
 })
 
-
+function increseNumberOfGuesses() {
+    no_guesses++
+    document.getElementById("num-guesses").textContent = no_guesses;
+}
+function addHistory(number, hint) {
+    document.getElementById("history").innerHTML += `
+        <p>${number} ${hint}</p>
+    `
+}
 function check() {
     let guessNumber = parseInt(document.getElementsByClassName("input-number")[0].value)
     if (isNaN(guessNumber)) return false

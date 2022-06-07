@@ -104,3 +104,33 @@ a {
     justify-content: center;
     padding: 20px;
 }
+
+h4 {
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+    color: #f7cd99;
+    margin-left: 30px;
+}
+
+#history {
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+}
+
+#num-guesses {
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 80px;
+    color: white;
+}
+
+.cols {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    margin: 5px;
+}
